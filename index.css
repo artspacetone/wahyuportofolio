@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+  Ini adalah perbaikan untuk Navbar yang menempel (fixed).
+  Kita memberi tahu setiap <section> yang menjadi target link
+  untuk memiliki margin atas saat di-scroll,
+  sebesar tinggi Navbar (h-20 -> 5rem -> 60px).
+*/
+#home,
+#about,
+#education,
+#experience,
+#projects,
+#skills,
+#contact {
+  scroll-margin-top: 5rem; /* 60px */
+}

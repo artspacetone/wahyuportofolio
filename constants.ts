@@ -1,11 +1,12 @@
-import type { NavLink, SocialLink, Stat, ExperienceItem, Project, SkillCategory, ProfessionalSkill } from './types';
+import type { NavLink, SocialLink, Stat, ExperienceItem, Project, SkillCategory, ProfessionalSkill, EducationItem } from './types';
 import { 
-    LinkedInIcon, GithubIcon, MailIcon, UserTieIcon, FolderOpenIcon, BriefcaseIcon, CodeIcon, ServerIcon, DatabaseIcon, WarehouseIcon, ClipboardListIcon, TrophyIcon, RocketIcon, ExternalLinkIcon
+    LinkedInIcon, GithubIcon, MailIcon, UserTieIcon, FolderOpenIcon, BriefcaseIcon, CodeIcon, ServerIcon, DatabaseIcon, WarehouseIcon, ClipboardListIcon, TrophyIcon, RocketIcon, ExternalLinkIcon, GraduationCapIcon
 } from './components/icons';
 
 export const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
+  { href: '#education', label: 'Education' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
@@ -54,6 +55,18 @@ export const experienceData: ExperienceItem[] = [
             'Managed daily operations, inventory, and sales report administration',
             'Trained staff to ensure optimal service and customer satisfaction',
         ],
+    },
+];
+
+// --- PERUBAHAN DI SINI ---
+// Data pendidikan Anda yang baru telah dimasukkan
+export const educationData: EducationItem[] = [
+    {
+        date: 'Lulus 2010',
+        degree: 'Sarjana Ekonomi (S.E.) - Akuntansi',
+        institution: 'Universitas Muhammadiyah Prof. Dr. Hamka, Jakarta',
+        description: 'Lulus dengan Indeks Prestasi Kumulatif (IPK) 3.28 dari 4.00, dengan pemahaman mendalam pada audit dan sistem informasi akuntansi.',
+        link: 'https://drive.google.com/file/d/1lba4iROTXz0-WwDr2lxNF1scnnl0cmXG/view'
     },
 ];
 
@@ -141,5 +154,7 @@ export const professionalSkills: ProfessionalSkill[] = [
     {name: 'Inventory Digitalization Strategy'},
     {name: 'Data-Driven Reporting & Analysis'},
     {name: 'Technical Project Management'},
-    {name: 'Vendor & Procurement Coordination'},
+	{name: 'Vendor & Procurement Coordination'},
+    {name: 'Suply Chain Management'},
+	{name: 'Problem Solving'},
 ];

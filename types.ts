@@ -53,3 +53,12 @@ export interface SkillCategory {
 export interface ProfessionalSkill {
     name: string;
 }
+
+// --- PERUBAHAN DI SINI ---
+export interface EducationItem {
+  date: string;
+  degree: string;
+  institution: string;
+  description: string;
+  link?: string; // Properti link ditambahkan (opsional)
+}

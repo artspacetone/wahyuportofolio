@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { navLinks } from '../constants';
 
@@ -9,7 +8,9 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      // --- PERBAIKAN DI SINI ---
+      // Ubah dari 10 menjadi 1. Navbar akan menjadi solid setelah scroll 1 pixel.
+      setIsScrolled(window.scrollY > 1); 
 
       const sections = navLinks.map(link => document.getElementById(link.href.substring(1))).filter(Boolean);
       let currentSection = 'home';

@@ -1,5 +1,6 @@
 import React from 'react';
 import { projectsData } from '../constants';
+// --- PERBAIKAN DI SINI ---
 import { ExternalLinkIcon, GithubIcon, RocketIcon } from './icons';
 
 const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project }) => {
@@ -8,7 +9,6 @@ const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project })
   return (
     <div className="bg-white dark:bg-charcoal-800 rounded-lg shadow-md overflow-hidden border border-gray-200 dark:border-charcoal-700/50 flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       
-      {/* --- BAGIAN YANG DIPERBARUI --- */}
       <div className="w-full h-48 bg-gray-200 dark:bg-charcoal-900 flex items-center justify-center">
         <img 
           src={imageUrl} 
@@ -16,7 +16,6 @@ const ProjectCard: React.FC<{ project: typeof projectsData[0] }> = ({ project })
           className="w-full h-full object-contain" 
         />
       </div>
-      {/* --- AKHIR BAGIAN YANG DIPERBARUI --- */}
 
       <div className="p-6 flex-grow flex flex-col">
         <h3 className="text-xl font-bold mb-2">{title}</h3>

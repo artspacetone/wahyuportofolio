@@ -1,16 +1,18 @@
 import React from 'react';
 import { educationData } from '../constants';
-import { GraduationCapIcon, ExternalLinkIcon } from './icons'; // <-- 1. Impor ExternalLinkIcon
+import { GraduationCapIcon, ExternalLinkIcon } from './icons';
 
 const Education: React.FC = () => {
   return (
     <section id="education" className="py-24 bg-white dark:bg-charcoal-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold">Pendidikan</h2>
+          {/* --- PERUBAHAN DI SINI --- */}
+          <h2 className="text-3xl md:text-4xl font-extrabold">Education</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
-            Dasar pengetahuan dan keahlian formal saya.
+            My academic background and formal qualifications.
           </p>
+          {/* --- AKHIR PERUBAHAN --- */}
         </div>
         <div className="relative max-w-3xl mx-auto">
           <div className="absolute left-4 top-0 h-full w-0.5 bg-teal-500/30"></div>
@@ -25,7 +27,6 @@ const Education: React.FC = () => {
                 <div className="text-md font-medium text-gray-600 dark:text-gray-300 mb-4">{item.institution}</div>
                 <p className="text-gray-500 dark:text-gray-400">{item.description}</p>
                 
-                {/* --- BAGIAN YANG DIPERBARUI: TAMPILKAN TOMBOL JIKA LINK ADA --- */}
                 {item.link && (
                   <a
                     href={item.link}
@@ -34,11 +35,11 @@ const Education: React.FC = () => {
                     className="inline-flex items-center gap-2 mt-4 px-4 py-2 text-sm font-medium rounded-md border border-teal-500 text-teal-500 hover:bg-teal-500/10 transition-colors"
                   >
                     <ExternalLinkIcon className="w-4 h-4" />
-                    Lihat Ijazah
+                    {/* --- PERUBAHAN DI SINI --- */}
+                    View Certificate
+                    {/* --- AKHIR PERUBAHAN --- */}
                   </a>
                 )}
-                {/* --- AKHIR BAGIAN YANG DIPERBARUI --- */}
-
               </div>
             </div>
           ))}

@@ -1,7 +1,12 @@
+// --- PERBAIKAN DI SINI ---
 import type { NavLink, SocialLink, Stat, ExperienceItem, Project, SkillCategory, ProfessionalSkill, EducationItem } from './types';
 import { 
     LinkedInIcon, GithubIcon, MailIcon, UserTieIcon, FolderOpenIcon, BriefcaseIcon, CodeIcon, ServerIcon, DatabaseIcon, WarehouseIcon, ClipboardListIcon, TrophyIcon, RocketIcon, ExternalLinkIcon, GraduationCapIcon
-} from './components/icons';
+} from './components/icons'; // Pastikan path ini benar
+
+// ... (sisa kode biarkan apa adanya) ...
+
+// (seluruh konten file constants.ts lainnya)
 
 export const navLinks: NavLink[] = [
   { href: '#home', label: 'Home' },
@@ -58,14 +63,12 @@ export const experienceData: ExperienceItem[] = [
     },
 ];
 
-// --- PERUBAHAN DI SINI ---
-// Data pendidikan Anda yang baru telah dimasukkan
 export const educationData: EducationItem[] = [
     {
-        date: 'Lulus 2010',
-        degree: 'Sarjana Ekonomi (S.E.) - Akuntansi',
-        institution: 'Universitas Muhammadiyah Prof. Dr. Hamka, Jakarta',
-        description: 'Lulus dengan Indeks Prestasi Kumulatif (IPK) 3.28 dari 4.00, dengan pemahaman mendalam pada audit dan sistem informasi akuntansi.',
+        date: 'Graduated 2010',
+        degree: 'Bachelor of Economics (S.E.) - Accounting',
+        institution: 'Prof. Dr. Hamka Muhammadiyah University, Jakarta',
+        description: 'Graduated with a GPA of 3.28 out of 4.00, with a deep understanding of auditing and accounting information systems.',
         link: 'https://drive.google.com/file/d/1lba4iROTXz0-WwDr2lxNF1scnnl0cmXG/view'
     },
 ];
@@ -154,7 +157,8 @@ export const professionalSkills: ProfessionalSkill[] = [
     {name: 'Inventory Digitalization Strategy'},
     {name: 'Data-Driven Reporting & Analysis'},
     {name: 'Technical Project Management'},
-	{name: 'Vendor & Procurement Coordination'},
-    {name: 'Suply Chain Management'},
+    {name: 'Vendor & Procurement Coordination'},
+	{name: 'Suply Chain Management'},
 	{name: 'Problem Solving'},
+	
 ];
